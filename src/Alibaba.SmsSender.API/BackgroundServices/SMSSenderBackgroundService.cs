@@ -24,9 +24,9 @@ public class SMSSenderBackgroundService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        await foreach (var smsDto in _smsChannel.Reader.ReadAllAsync())
+        await foreach (var smsDto in _smsChannel.Reader.ReadAllAsync(stoppingToken))
         {
-            await Task.Delay(TimeSpan.FromSeconds(8));
+            await Task.Delay(TimeSpan.FromSeconds(8), stoppingToken);
             _logger.LogInformation("{@SMS}", smsDto);
         }
     }
