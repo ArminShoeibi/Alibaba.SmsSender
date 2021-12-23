@@ -5,9 +5,10 @@ namespace Alibaba.SmsSender.API.BackgroundServices;
 
 public class SMSSenderBackgroundService : BackgroundService
 {
+
+    private readonly ILogger<SMSSenderBackgroundService> _logger;
     private static readonly Channel<SMSDto> _smsChannel;
     public static ChannelWriter<SMSDto> SMSChannelWriter { get; }
-    private readonly ILogger<SMSSenderBackgroundService> _logger;
     static SMSSenderBackgroundService()
     {
         _smsChannel = Channel.CreateUnbounded<SMSDto>(new UnboundedChannelOptions
@@ -26,7 +27,7 @@ public class SMSSenderBackgroundService : BackgroundService
     {
         await foreach (var smsDto in _smsChannel.Reader.ReadAllAsync(stoppingToken))
         {
-            await Task.Delay(TimeSpan.FromSeconds(8), stoppingToken);
+            await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
             _logger.LogInformation("{@SMS}", smsDto);
         }
     }
