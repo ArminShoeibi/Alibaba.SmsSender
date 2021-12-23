@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3E3AC0C5-B132-4F88-A324-35A08A9C0B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alibaba.SmsSender.API", "src\Alibaba.SmsSender.API\Alibaba.SmsSender.API.csproj", "{AC58C835-5793-4D7D-9EE1-DFE729322D3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC58C835-5793-4D7D-9EE1-DFE729322D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC58C835-5793-4D7D-9EE1-DFE729322D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC58C835-5793-4D7D-9EE1-DFE729322D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC58C835-5793-4D7D-9EE1-DFE729322D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC58C835-5793-4D7D-9EE1-DFE729322D3C} = {3E3AC0C5-B132-4F88-A324-35A08A9C0B27}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1821A15A-455C-47D9-AFE8-0C034BE36B57}
+	EndGlobalSection
+EndGlobal
