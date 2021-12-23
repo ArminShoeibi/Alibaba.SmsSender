@@ -1,4 +1,4 @@
-﻿using Alibaba.SmsSender.API.Models;
+﻿using Alibaba.SmsSender.API.DTOs;
 using System.Threading.Channels;
 
 namespace Alibaba.SmsSender.API.BackgroundServices;

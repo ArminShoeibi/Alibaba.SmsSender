@@ -1,4 +1,4 @@
-﻿namespace Alibaba.SmsSender.API.Models;
+﻿namespace Alibaba.SmsSender.API.DTOs;
 
 public record class SMSDto
 {

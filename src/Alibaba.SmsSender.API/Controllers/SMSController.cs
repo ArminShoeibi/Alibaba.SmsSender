@@ -1,5 +1,5 @@
 ﻿using Alibaba.SmsSender.API.BackgroundServices;
-using Alibaba.SmsSender.API.Models;
+using Alibaba.SmsSender.API.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Alibaba.SmsSender.API.Controllers;
