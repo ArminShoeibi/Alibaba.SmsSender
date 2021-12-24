@@ -2,6 +2,6 @@
 
 public record class SMSDto
 {
-    public string RecipientPhoneNumber { get; set; }
-    public string Content { get; set; }
+    public string RecipientPhoneNumber { get; init; }
+    public string Content { get; init; }
 }

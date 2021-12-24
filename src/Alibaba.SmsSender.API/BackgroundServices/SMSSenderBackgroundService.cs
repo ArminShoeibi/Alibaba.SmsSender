@@ -27,7 +27,7 @@ public class SMSSenderBackgroundService : BackgroundService
     {
         await foreach (var smsDto in _smsChannel.Reader.ReadAllAsync(stoppingToken))
         {
-            await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
+            await Task.Delay(TimeSpan.FromSeconds(2), stoppingToken);
             _logger.LogInformation("{@SMS}", smsDto);
         }
     }

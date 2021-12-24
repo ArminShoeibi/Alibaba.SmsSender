@@ -10,7 +10,11 @@ public class SMSController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> SendSMS(SMSDto smsDto, CancellationToken cancellationToken)
     {
-        await SMSSenderBackgroundService.SMSChannelWriter.WriteAsync(smsDto, cancellationToken);
+        for (int i = 0; i < 100; i++)
+        {
+            await SMSSenderBackgroundService.SMSChannelWriter.WriteAsync(smsDto, cancellationToken);
+        }
+       
         return Ok();
     }
 }
